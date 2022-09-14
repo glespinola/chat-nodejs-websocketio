@@ -17,6 +17,7 @@ $(function(){
     //Eventos
 
     messageForm.submit( e =>{
+	//if(typeof nickName == "string"){...lo de abajo}
         //Evitamos que se recargue la pantalla:
         e.preventDefault();
         //Enviamos el evento que debe recibir el servidor:
