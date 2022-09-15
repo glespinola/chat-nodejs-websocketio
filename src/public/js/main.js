@@ -44,9 +44,9 @@ $(function(){
 		console.log("debe iniciar sesion");
 		console.log("nick:", nick);
 		console.log("datos.nick:",datos.nick);
-		socket.disconnect();
-		location.reload();
-		return;
+// 		socket.disconnect();
+// 		location.reload();
+// 		return;
 	}
         if(nick == datos.nick){
             color = '#9ff4c5';
