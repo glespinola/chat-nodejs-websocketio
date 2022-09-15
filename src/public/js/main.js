@@ -43,6 +43,7 @@ $(function(){
 	if(nick == undefined || datos.nick == undefined){
 		console.log("debe iniciar sesion");
 		socket.disconnect();
+		location.reload();
 		return;
 	}
         if(nick == datos.nick){
