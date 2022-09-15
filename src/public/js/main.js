@@ -40,6 +40,11 @@ $(function(){
     //Obtenemos respuesta del servidor:
     socket.on('nuevo mensaje', function(datos){
         let color = '#f5f4f4';
+	if(nick == undefined){
+		console.log("debe iniciar sesion");
+		socket.disconnect();
+		return;
+	}
         if(nick == datos.nick){
             color = '#9ff4c5';
         }else{
