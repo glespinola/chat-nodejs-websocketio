@@ -10,8 +10,8 @@ module.exports = (io) =>{
             //console.log(datos);
             //Lo enviamos a todos los usuarios (clientes)
             io.sockets.emit('nuevo mensaje', {
-                msg: datos,
-                nick: socket.nickname
+                msg: datos.msg,
+                nick: datos.nick
             });
         });
 
