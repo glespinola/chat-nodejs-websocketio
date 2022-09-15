@@ -21,7 +21,7 @@ $(function(){
         //Evitamos que se recargue la pantalla:
         e.preventDefault();
         //Enviamos el evento que debe recibir el servidor:
-        socket.emit('enviar mensaje', messageBox.val());
+        socket.emit('enviar mensaje', {msg:messageBox.val(), nick});
         //Limpiamos el input
         messageBox.val('');
     });
